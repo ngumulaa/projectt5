@@ -119,9 +119,9 @@ public class Animal implements Comparable<Animal> {
     @Override
     public int compareTo(Animal other) {
         int result = sound.compareTo(other.getSound()); 
-        if (result == 0) { 
-            result = color.compareTo(other.getColor()); 
-        }
+        // if (result == 0) { 
+        //     result = color.compareTo(other.getColor()); 
+        // }
         if(sortOrder == SortOrder.REVERSE) { 
             result = -result; 
         }

@@ -12,8 +12,9 @@ public class Crab extends Animal {
         super("crab", "red", 8, 1.5, "click", false);
     }
 
-    // implement the compareTo method
-    public int compareTo(Animal other) {
-        return this.getSound().compareTo(other.getSound());
+   // override the legs method 
+    @Override
+    public int getLegs() {
+        return 10;
     }
 }

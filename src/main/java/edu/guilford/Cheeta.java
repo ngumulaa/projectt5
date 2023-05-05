@@ -13,10 +13,13 @@ public class Cheeta extends Animal  {
           super("cheeta", "yellow", 4, 4.5, "roar", false);
      }
 
-     // implement the compareTo method 
-     public int compareTo(Animal other) {
-         return this.getSound().compareTo(other.getSound());
+     // override the size method 
+     @Override
+     public double getSize() {
+         return 5.8;
      }
+     
+
 
 
 

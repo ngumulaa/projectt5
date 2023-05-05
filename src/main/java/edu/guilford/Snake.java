@@ -12,8 +12,9 @@ public class Snake extends Animal {
         super("snake", "green", 0, 2.5, "hiss", false);
     }
 
-    // implement the compareTo method
-    public int compareTo(Animal other) {
-        return this.getSound().compareTo(other.getSound());
+    // override the color method 
+    @Override
+    public String getColor() {
+        return "brown";
     }
 }
